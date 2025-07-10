@@ -186,4 +186,29 @@ run another terminal
 ros2 run cpp_pubsub_for_interface listener
 ```
 
+## 1.7.py_pubsub_for_interface
+Tips:The simplest code example is used to demonstrate topic message subscription and publishing using custom message types based on python
 
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro kilted -y
+```
+
+compiler package
+```bash
+colcon build --packages-select py_pubsub_for_interface
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run py_pubsub_for_interface talker
+```
+
+run another terminal
+```bash
+ros2 run py_pubsub_for_interface listener
+```
