@@ -97,3 +97,31 @@ run another terminal
 ros2 run cpp_srvcli_demo client
 ```
 
+## 1.4.py_srvcli_demo
+
+Tips:Most simplest service demo sample for service server and client in python
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro kilted -y
+```
+
+compiler package
+```bash
+colcon build --packages-select py_srvcli_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+
+run a terminal
+```bash
+ros2 run py_srvcli_demo server
+```
+
+run another terminal
+```bash
+ros2 run py_srvcli_demo client
+```
