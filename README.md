@@ -369,3 +369,25 @@ run another terminal
 ```bash
 ros2 ros2 param set /minimal_param_node my_parameter earth
 ```
+
+## 1.14.python_parameters_by_launch_demo
+Tips:The simplest parameter example using python by launch file
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro kilted -y
+```
+
+compiler package
+```bash
+colcon build --packages-select python_parameters_by_launch_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run python_parameters_by_launch_demo minimal_param_node
+```
