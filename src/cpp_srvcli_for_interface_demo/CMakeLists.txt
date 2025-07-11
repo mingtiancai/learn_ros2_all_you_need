@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(cpp_pubsub_for_interface)
+project(cpp_srvcli_for_interface_demo)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -7,22 +7,18 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
-
 find_package(rclcpp REQUIRED)
-find_package(tutorial_interfaces_demo REQUIRED)                      # CHANGE
+find_package(tutorial_interfaces_demo REQUIRED)
 
-add_executable(talker src/publisher_member_function.cpp)
-target_link_libraries(talker PUBLIC rclcpp::rclcpp ${tutorial_interfaces_demo_TARGETS})    # CHANGE
+add_executable(server src/add_two_ints_server.cpp)
+target_link_libraries(server PUBLIC rclcpp::rclcpp ${tutorial_interfaces_demo_TARGETS})  # CHANGE
 
-add_executable(listener src/subscriber_member_function.cpp)
-target_link_libraries(listener PUBLIC rclcpp::rclcpp ${tutorial_interfaces_demo_TARGETS})  # CHANGE
+add_executable(client src/add_two_ints_client.cpp)
+target_link_libraries(client PUBLIC rclcpp::rclcpp ${tutorial_interfaces_demo_TARGETS})
 
 install(TARGETS
-  talker
-  listener
+  server
+  client
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
