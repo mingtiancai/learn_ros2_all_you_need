@@ -267,3 +267,29 @@ run another terminal
 ros2 run py_srvcli_for_interface_demo client
 ```
 
+## 1.10.more_interfaces_demo
+Tips:Use custom topic format in the package to publish messages to the outside world
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro kilted -y
+```
+
+compiler package
+```bash
+colcon build --packages-select more_interfaces_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run more_interfaces_demo publish_address_book
+```
+
+run another terminal
+```bash
+ros2 topic echo /address_book
+```
