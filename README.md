@@ -239,3 +239,31 @@ run another terminal
 ```bash
 ros2 run cpp_srvcli_for_interface_demo client
 ```
+
+## 1.9.py_srvcli_for_interface_demo
+Tips:The simplest code example is used to demonstrate srv message server and client using custom message types based on python
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro kilted -y
+```
+
+compiler package
+```bash
+colcon build --packages-select py_srvcli_for_interface_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run py_srvcli_for_interface_demo server
+```
+
+run another terminal
+```bash
+ros2 run py_srvcli_for_interface_demo client
+```
+
