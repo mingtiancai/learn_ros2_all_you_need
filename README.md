@@ -440,3 +440,30 @@ run another terminal
 ```bash
 ros2 run custom_action_cpp_demo fibonacci_action_client
 ```
+
+## 1.17.custom_action_py_demo
+Tips:The simplest action server and client demo for python
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro kilted -y
+```
+
+compiler package
+```bash
+colcon build --packages-select custom_action_py_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run custom_action_py_demo server
+```
+
+run another terminal
+```bash
+ros2 run custom_action_py_demo client
+```
