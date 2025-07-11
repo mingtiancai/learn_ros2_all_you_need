@@ -320,3 +320,26 @@ run another terminal
 ```bash
 ros2 ros2 param set /minimal_param_node my_parameter earth
 ```
+
+## 1.12.cpp_parameters_by_launch_demo
+Tips:The simplest parameter example using C++ by launch file
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro kilted -y
+```
+
+compiler package
+```bash
+colcon build --packages-select cpp_parameters_by_launch_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run cpp_parameters_by_launch_demo minimal_param_node
+```
+
