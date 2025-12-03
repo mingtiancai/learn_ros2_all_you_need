@@ -2,7 +2,7 @@
 
 | key   | value | 
 |--------|------|
-| ros2    | kilted  |
+| ros2    | jazzy  |
 | sys| ubuntu24.04 |
 
 
