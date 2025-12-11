@@ -15,7 +15,7 @@ Tips:Most simplest topic demo sample for topic publish and subscribe in c++
 Go to the project root directory 
 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -45,7 +45,7 @@ Tips:Most simplest topic demo sample for topic publish and subscribe in python
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -74,7 +74,7 @@ Tips:Most simplest service demo sample for service server and client in c++
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -103,7 +103,7 @@ Tips:Most simplest service demo sample for service server and client in python
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -131,7 +131,7 @@ Tips:Most simplest interface sample for message and srv files
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -164,7 +164,7 @@ Tips:The simplest code example is used to demonstrate topic message subscription
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -191,7 +191,7 @@ Tips:The simplest code example is used to demonstrate topic message subscription
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -218,7 +218,7 @@ Tips:The simplest code example is used to demonstrate srv message server and cli
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -245,7 +245,7 @@ Tips:The simplest code example is used to demonstrate srv message server and cli
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -272,7 +272,7 @@ Tips:Use custom topic format in the package to publish messages to the outside w
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -299,7 +299,7 @@ Tips:The simplest parameter example using C++
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -326,7 +326,7 @@ Tips:The simplest parameter example using C++ by launch file
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -348,7 +348,7 @@ Tips:The simplest parameter example using python
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -375,7 +375,7 @@ Tips:The simplest parameter example using python by launch file
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -397,7 +397,7 @@ Tips:The simplest action interfaces demo
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -419,7 +419,7 @@ Tips:The simplest action server and client demo for c++
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
@@ -446,7 +446,7 @@ Tips:The simplest action server and client demo for python
 
 Go to the project root directory 
 ```bash
-rosdep install -i --from-path src --rosdistro kilted -y
+rosdep install -i --from-path src --rosdistro jazzy -y
 ```
 
 compiler package
