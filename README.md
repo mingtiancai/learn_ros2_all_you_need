@@ -468,3 +468,101 @@ run another terminal
 ros2 run custom_action_py_demo client
 ```
 
+## 1.18.python_camera_demo
+Tips:The simplest camera demo, read mp4 video and show
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro jazzy -y
+```
+
+compiler package
+```bash
+colcon build --packages-select python_camera_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run python_camera_demo demo 
+```
+
+## 1.19.py_camera_node
+Tips:The simplest camera node demo, pub node publish camera use ros2 image message and sub node receive data and show
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro jazzy -y
+```
+
+compiler package
+```bash
+colcon build --packages-select py_camera_node
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run py_camera_node pub_demo
+```
+
+run another terminal
+```bash
+ros2 run py_camera_node sub_demo  
+```
+
+## 1.20.py_qos_demo
+Tips:The simplest qos demo
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro jazzy -y
+```
+
+compiler package
+```bash
+colcon build --packages-select py_qos_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 run py_qos_demo talker
+```
+
+run another terminal
+```bash
+ros2 run py_qos_demo listener  
+```
+
+## 1.21.py_launch_demo
+Tips:The simplest launch demo, one node is pub and other node is sub
+
+Go to the project root directory 
+```bash
+rosdep install -i --from-path src --rosdistro jazzy -y
+```
+
+compiler package
+```bash
+colcon build --packages-select py_launch_demo
+```
+
+source package directory
+```bash
+source ./install/setup.sh
+```
+run a terminal
+```bash
+ros2 launch py_launch_demo launch.py
+```
+
