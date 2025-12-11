@@ -40,10 +40,9 @@ class FibonacciActionServer(Node):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            fibonacci_action_server = FibonacciActionServer()
-
-            rclpy.spin(fibonacci_action_server)
+        rclpy.init(args=args)
+        fibonacci_action_server = FibonacciActionServer()
+        rclpy.spin(fibonacci_action_server)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 

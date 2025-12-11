@@ -23,14 +23,14 @@ class MinimalClientAsync(Node):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            minimal_client = MinimalClientAsync()
-            future = minimal_client.send_request()
-            rclpy.spin_until_future_complete(minimal_client, future)
-            response = future.result()
-            minimal_client.get_logger().info(
-                'Result of add_three_ints: for %d + %d + %d = %d' %                                # CHANGE
-                (minimal_client.req.a, minimal_client.req.b, minimal_client.req.c, response.sum))  # CHANGE
+        rclpy.init(args=args)
+        minimal_client = MinimalClientAsync()
+        future = minimal_client.send_request()
+        rclpy.spin_until_future_complete(minimal_client, future)
+        response = future.result()
+        minimal_client.get_logger().info(
+            'Result of add_three_ints: for %d + %d + %d = %d' %                                # CHANGE
+            (minimal_client.req.a, minimal_client.req.b, minimal_client.req.c, response.sum))  # CHANGE
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 

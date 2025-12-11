@@ -38,10 +38,9 @@ class MinimalPublisher(Node):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            minimal_publisher = MinimalPublisher()
-
-            rclpy.spin(minimal_publisher)
+        rclpy.init(args=args)
+        minimal_publisher = MinimalPublisher()
+        rclpy.spin(minimal_publisher)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 

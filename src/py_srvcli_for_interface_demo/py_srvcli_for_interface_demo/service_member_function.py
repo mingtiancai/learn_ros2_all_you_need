@@ -19,10 +19,9 @@ class MinimalService(Node):
 
 def main(args=None):
     try:
-        with rclpy.init(args=args):
-            minimal_service = MinimalService()
-
-            rclpy.spin(minimal_service)
+        rclpy.init(args=args)
+        minimal_service = MinimalService()
+        rclpy.spin(minimal_service)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 

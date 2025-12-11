@@ -17,9 +17,9 @@ class MinimalParam(Node):
 
 def main():
     try:
-        with rclpy.init():
-            node = MinimalParam()
-            rclpy.spin(node)
+        rclpy.init()
+        node = MinimalParam()
+        rclpy.spin(node)
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
 
