@@ -646,7 +646,7 @@ ros2 run turtlesim turtlesim_node
 
 run another terminal
 ```bash
-ros2 run py_tf2_dynamic_demo broadcaster
+ros2 run py_tf2_dynamic_demo broadcaster --ros-args -p turtlename:=turtle1
 ```
 
 run another terminal
